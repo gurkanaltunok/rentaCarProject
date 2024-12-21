@@ -55,7 +55,7 @@ public:
 
     // Override display function to include car type
     void display() const override {
-        cout << "[Premium] " << "Brand: " << brand << ", Model: " << model << ", ID: " << id << ", Price: " << price << endl;
+        cout << "[Premium] " << "Brand: " << brand << ", Model: " << model << ", ID: " << id << ", Price: " << price << " TL" << endl;
     }
 
     // Override function to return the car type
@@ -72,7 +72,7 @@ public:
 
     // Override display function to include car type
     void display() const override {
-        cout << "[Economy] " << "Brand: " << brand << ", Model: " << model << ", ID: " << id << ", Price: " << price << endl;
+        cout << "[Economy] " << "Brand: " << brand << ", Model: " << model << ", ID: " << id << ", Price: " << price << " TL"  << endl;
     }
 
     // Override function to return the car type
@@ -160,7 +160,7 @@ public:
         cout << "Name: " << name << "\n";
         cout << "Phone: " << phone << "\n";
         cout << "Start Date: " << startDate << "\n";
-        cout << "Total Cost: " << totalCost << "\n";
+        cout << "Total Cost: " << totalCost << " TL" <<  "\n";
 
         // Confirm the reservation
         int confirm;
@@ -208,9 +208,9 @@ int main() {
     // Writing a list of cars
     Car* cars[] = {
         new PremiumCar("Mercedes", "C220", "1", 2000),
-        new PremiumCar("Mercedes", "E350", "2", 2000),
+        new PremiumCar("Mercedes", "E350", "2", 2200),
         new PremiumCar("BMW", "4.20d", "3", 1800),
-        new PremiumCar("Audi", "A5", "4", 1800),
+        new PremiumCar("Audi", "A5", "4", 1900),
         new PremiumCar("Audi", "A3", "5", 1600),
         new EconomyCar("Mazda", "Demio", "6", 1200),
         new EconomyCar("Hyundai", "i20", "7", 600),
